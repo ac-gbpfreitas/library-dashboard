@@ -11,6 +11,14 @@
         private string $username;
         private string $password;
         private int    $userCategory;
+        private string $fullName; //This property is completely optional, can be taken away if preferred
+        private string $dob;
+        private string $address;
+        private string $phone;
+        private string $city;
+        private string $province;
+        private string $picture;
+        private string $notes;
 
         /**
          * @return string $id;
@@ -69,10 +77,75 @@
         }
 
         /**
-         * @param string id
+         * @param string id;
          */
-        public function setId(string $id) : void {
+        public function setId(string $id) : void 
+        {
             $this->_id = $id;
         }
 
+        /**
+         * @return string $fullName;
+         */
+        public function getFullName(): string
+        {
+            $this->fullName = "{$this->firstName} {$this->lastName}";
+            return $this->fullName;
+        }
+
+        /**
+         * @return string $dob;
+         */
+        public function getDateOfBirth(): string
+        {
+            return $this->dob;
+        }
+
+        /**
+         * @return string $address;
+         */
+        public function getAddress(): string
+        {
+            return $this->address;
+        }
+
+        /**
+         * @return string $phone or null;
+         */
+        public function getPhone(): ?string
+        {
+            return $this->phone;
+        }
+
+        /**
+         * @return string $city;
+         */
+        public function getCity(): string
+        {
+            return $this->city;
+        }
+
+        /**
+         * @return string $province;
+         */
+        public function getProvince(): string
+        {
+            return $this->province;
+        }
+
+        /**
+         * @return string $picture or null;
+         */
+        public function getPicture(): ?string
+        {
+            return $this->picture;
+        }
+
+        /**
+         * @return string $notes or null
+         */
+        public function getNotes(): ?string
+        {
+            return $this->notes;
+        }
     }

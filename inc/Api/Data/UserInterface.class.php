@@ -42,14 +42,48 @@ interface UserInterface {
      */
     public function setId(string $id) : void;
 
-    // public function getFullName()     : string;
-    // public function getDateOfBirth()  : string;
-    // public function getAddress()      : string;
-    // public function getEmail()        : string;
-    // public function getPhone()        :? string;
-    // public function getCity()         : string;
-    // public function getProvince()     : string;
-    // public function getPicture()      :? string;
-    // public function getNotes()        :? string;
+    /**
+     * @return string
+     */
+    public function getFullName() : string;
+
+    /**
+     * @return string
+     */
+    public function getDateOfBirth()  : string;
+
+    /**
+     * @return string
+     */
+    public function getAddress()      : string;
+
+    /**
+     * @return string
+     */
+    public function getEmail()        : string;
+
+    /**
+     * @return string or null
+     */
+    public function getPhone()        :? string;
+
+    /**
+     * @return string
+     */
+    public function getCity()         : string;
+    /**
+     * @return string
+     */
+    public function getProvince()     : string;
+
+    /**
+     * @return string or null
+     */
+    public function getPicture()      :? string;
+
+    /**
+     * @return string or null
+     */
+    public function getNotes()        :? string;
 
 }
