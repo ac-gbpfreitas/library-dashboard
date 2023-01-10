@@ -4,21 +4,22 @@
 
     class User implements UserInterface {
 
-        private string    $_id;
-        private string $firstName;
-        private string $lastName;
-        private string $email;
-        private string $username;
-        private string $password;
-        private int    $userCategory;
-        private string $fullName; //This property is completely optional, can be taken away if preferred
-        private string $dob;
-        private string $address;
-        private string $phone;
-        private string $city;
-        private string $province;
-        private string $picture;
-        private string $notes;
+        //Make them protected if we keep with Author class as a subclass, else, make them private
+        protected string    $_id;
+        protected string $firstName;
+        protected string $lastName;
+        protected string $email;
+        protected string $username;
+        protected string $password;
+        protected int    $userCategory;
+        protected string $fullName; //This property is completely optional, can be taken away if preferred
+        protected string $dob;
+        protected string $address;
+        protected string $phone;
+        protected string $city;
+        protected string $province;
+        protected string $picture;
+        protected string $notes;
 
         /**
          * @return string $id;
