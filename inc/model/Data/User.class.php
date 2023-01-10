@@ -39,7 +39,7 @@
         /**
          * @return string $lastName;
          */
-        public function getLastName(): string
+        public function getLastName() : string
         {
             return $this->lastName;
         }
@@ -63,7 +63,7 @@
         /**
          * @return string $password;
          */
-        public function getPassword(): string
+        public function getPassword() : string
         {
             return $this->password;
         }
@@ -87,7 +87,7 @@
         /**
          * @return string $fullName;
          */
-        public function getFullName(): string
+        public function getFullName() : string
         {
             $this->fullName = "{$this->firstName} {$this->lastName}";
             return $this->fullName;
@@ -96,7 +96,7 @@
         /**
          * @return string $dob;
          */
-        public function getDateOfBirth(): string
+        public function getDateOfBirth() : string
         {
             return $this->dob;
         }
@@ -104,7 +104,7 @@
         /**
          * @return string $address;
          */
-        public function getAddress(): string
+        public function getAddress() : string
         {
             return $this->address;
         }
@@ -112,7 +112,7 @@
         /**
          * @return string $phone or null;
          */
-        public function getPhone(): ?string
+        public function getPhone() : ?string
         {
             return $this->phone;
         }
@@ -120,7 +120,7 @@
         /**
          * @return string $city;
          */
-        public function getCity(): string
+        public function getCity() : string
         {
             return $this->city;
         }
@@ -128,7 +128,7 @@
         /**
          * @return string $province;
          */
-        public function getProvince(): string
+        public function getProvince() : string
         {
             return $this->province;
         }
@@ -136,7 +136,7 @@
         /**
          * @return string $picture or null;
          */
-        public function getPicture(): ?string
+        public function getPicture() : ?string
         {
             return $this->picture;
         }
@@ -144,7 +144,7 @@
         /**
          * @return string $notes or null
          */
-        public function getNotes(): ?string
+        public function getNotes() : ?string
         {
             return $this->notes;
         }
